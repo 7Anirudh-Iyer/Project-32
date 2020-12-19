@@ -174,11 +174,11 @@ function keyPressed(){
 
 async function gettime(){
 
-    var a = await fetch("http://worldclockapi.com/api/jsonp/cet/now?callback=mycallback")
+    var a = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata")
 
     var b = await a.json()
 
-     var c = b.currentDateTime
+     var c = b.datetime
      var d = c.slice(11,13)
 
     console.log(d)
